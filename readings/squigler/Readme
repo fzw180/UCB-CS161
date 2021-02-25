@@ -1,0 +1,34 @@
+To run this example you must have python installed (tested with version 2.6
+and version 2.7), and sqlite (tested with versions 3.6.23.1, version 3.7.4,
+3.11.1).
+
+To run the squigler web server:
+
+	python webserver.py
+
+Visit http://127.0.0.1:8080/ for squigler.com.  (You may be able to visit
+http://localhost:8080/ , but on some systems that doesn't work, as the
+browser tries to find www.localhost.com.)
+
+To edit the database:
+
+	echo .dump | sqlite3 database.sqlite3 > ascii-file
+
+	<edit ascii-file>
+
+	sqlite3
+		.read ascii-file
+		.backup X.new
+
+and the revised database is in X.new .
+
+The subdirectory sql-injection-demo-output/ contains output captured during
+the demo of SQL injection in lecture:
+
+	sql-injection-demo.out		Squigler stdout
+	sql-injection-demo.err		Squigler stderr
+
+	sql-injection-network-dump.out	Network traffic as logged by running
+					the "Bro" network monitor (per bro.org)
+	hdr-dump.bro			The Bro script used to generate the
+					network traffic log
