@@ -7,7 +7,7 @@ This course is divided into 5 sections:
 - Security principles : how to design a secure system
 - Memory safety : buffer overflow attack
 - Cryptography : symmetric encryption, asymmetric encryption, MAC, digital signature .........
-- Web : SQL, XSS, XSRF .......
+- Web : SQL, XSS, CSRF .......
 - Networking : attacks for each layer 
 
 The shining part of the course is the labs and projects, which will greatly enhance your mastery of the knowledge (See below for more details).
@@ -21,7 +21,7 @@ The shining part of the course is the labs and projects, which will greatly enha
 - Labs : there are three labs in total
   - padding oracle : how to make use of the padding oracle to breach the block cryption.
   - a real attack : a real problem countered in the CS61A's exam file releasing
-  - networking : packet sniffing
+  - networking : packet sniffing, RST TCP, DNS ... ...
 - Projects : there are three projects in total 
   - Proj1 : Hack into the VM use buffer overflow attack. You will do some real attacks on the providing virtualbox virtual machine.
   - **Proj2 (warning) :** This is a very code-heavy projects. You will implement a secure file sharing system in Go language. [Here is my implementation and design doc.](https://github.com/PKUFlyingPig/CS161-Project2-SecureFileShareSystem)
